@@ -1,0 +1,50 @@
+.navbar{
+    background: radial-gradient(circle at 0% -25%,#dd1f11 0%,#f3490c 0,#ec1f10 42%,#f00c0c 110%);
+}
+
+.sidebar{
+    
+    width: 250px;
+    height: 100vh;
+    background: radial-gradient(circle at 0% -25%,#e60f0f 0%,#f80a0ae7 0,#ec280e 42%,#f74e0b 110%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+}
+.sidebutton{
+    width: 240px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+.sidebtn{
+    
+    box-shadow: 0 5px 15px  rgba(51, 51, 51, 0.705);
+    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.336)!important;
+    color: white !important;
+}
+.nameicon{
+    color: white;
+}
+
+.chart{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.m{
+    margin-left: 150px;
+}
+.back{
+    background: radial-gradient(circle at 0% -25%,#df2b0c 0%,#e64910 0,#e9400d 42%,#ee0f07 110%);
+    border-radius: 12px;
+    color: white;
+}

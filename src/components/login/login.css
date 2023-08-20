@@ -1,0 +1,11 @@
+.loginform{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 12%;
+    border: 5px solid rgb(87, 78, 222);
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+ }
