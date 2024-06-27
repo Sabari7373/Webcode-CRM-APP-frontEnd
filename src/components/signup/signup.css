@@ -1,11 +1,26 @@
-.registerForm{
+.SignupForms{
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    margin-top: 10%;
-    border: 5px solid rgb(87, 78, 222);
-    width: 500px;
+    min-width: 500px;
     border-radius: 20px;
     text-align: center;
+    margin-top: 15%;
+    
+ }
+ .Heading{
+    padding: 10px;
+    border: 5px solid rgb(252, 252, 252);
+    border-radius: 10px;
+    background-color: azure;
+}
+.selects{
+    width: 250px;
+    margin-bottom: 15px;
+    background-color: aliceblue;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
  }

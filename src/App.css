@@ -1,3 +1,16 @@
 body{
-  background-color: rgb(104, 198, 207);
+  background-color: lavender;
+  /* background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url('./assets/linearOne.jpg'); */
+ 
+}
+.adminContainer{
+   width: 50%;
+   justify-content: center;
+   align-items: center;
+   margin-left: 25%;
+}
+.card{
+  background: none;
 }

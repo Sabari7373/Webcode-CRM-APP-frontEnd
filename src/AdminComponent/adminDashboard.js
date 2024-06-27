@@ -16,11 +16,11 @@ import {
 } from "mdb-react-ui-kit";
 import ChartApp from "./chart";
 
-export default function Dashboard() {
+function AdminDashboard() {
   const user = localStorage.getItem("name");
   const logOut = () => {
-    localStorage.removeItem("currentUser");
-    localStorage.removeItem("name");
+    // localStorage.removeItem("currentUser");
+    // localStorage.removeItem("fullName");
 
     console.log('Logouted...');
     localStorage.removeItem("token");
@@ -49,64 +49,30 @@ export default function Dashboard() {
 
               {/* sidebar */}
               <div className="sidebar position-absolute top-0 start-0">
-                <Link to="/dashboard">
+                <Link to="/AdminPortal">
                   <MDBNavbarBrand id="title" className="p-3" color="dark">
                     Customer Details
                   </MDBNavbarBrand>
                 </Link>
                 <div className="sidebutton p-3 gap-3">
-                  <Link to="/dashboard">
+                  <Link to="/AdminPortal">
                     <MDBBtn className="sidebtn">
                       <i class="fa-solid fa-chart-line"></i> Dashboard
                     </MDBBtn>
                   </Link>
 
-                  {user ? (
-                    <>
-                      <div className=" sidebutton">
-                        Current User
-                        <button
-                          className="btn btn-secondary "
-                          type="button"
-                          id="dropdownMenuButton">
-                          <i className="fa fa-user"></i>
 
-                          {user}
-                        </button>
-
-
-                        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a className="dropdown-item" href="/user">
-                            User view
-                          </a>
-                          <Link to="/">
-                            <MDBBtn className="dropdown-item">
-                              <i class="fa-solid fa-chart-line"></i>Log out
-                            </MDBBtn>
-                          </Link>
-                        </div>
-                        <Link to="/servicereq">
-                          <MDBBtn className="sidebtn m-2 mt-4">
-                            <i class="fa-solid fa-paper-plane"></i>Make a Service Request
-                          </MDBBtn>
-                        </Link>
-                        <Link to="/leads">
-                          <MDBBtn className="sidebtn m-2">
-                            <i class="fa-solid fa-paper-plane"></i> View leads Status
-                          </MDBBtn>
-                        </Link>
-                      </div>
-                    </>
-                  ) : (
-                    <>
-
-                      <li className="nav-item">
-                        <a className="nav-link btn-success p-3 rounded" href="/">
-                          Login
-                        </a>
-                      </li>
-                    </>
-                  )}
+                
+                  <Link to="/servicereq">
+                    <MDBBtn className="sidebtn">
+                      <i class="fa-solid fa-paper-plane"></i> Create Service Request
+                    </MDBBtn>
+                  </Link>
+                  <Link to="/leads">
+                    <MDBBtn className="sidebtn">
+                      <i class="fa-solid fa-paper-plane"></i> All Leads Status
+                    </MDBBtn>
+                  </Link>
 
                   {/* <Link to="/editleads">
                     <MDBBtn className="sidebtn">
@@ -114,11 +80,7 @@ export default function Dashboard() {
                     </MDBBtn>
                   </Link> */}
 
-                  {/* <Link to="/">
-                    <MDBBtn className="sidebtn">
-                      <i class="fa-solid fa-right-from-bracket"></i> Logout
-                    </MDBBtn>
-                  </Link> */}
+                  
                 </div>
               </div>
             </MDBNavbarNav>
@@ -135,8 +97,8 @@ export default function Dashboard() {
       <div className="dashboard-conrtainer">
         <MDBContainer className="charts gap-2 mb-3" fluid>
           <div className="back p-4 text-center">
-            <MDBBtn className="btn">Overal Request</MDBBtn>
-            <h3 className="text-center m-3">40</h3>
+            <MDBBtn className="btn">TotalUsers</MDBBtn>
+            <h3 className="text-center m-3">85</h3>
 
           </div>
           <div className="back p-4 text-center">
@@ -164,3 +126,6 @@ export default function Dashboard() {
     </>
   );
 }
+
+
+export default AdminDashboard 

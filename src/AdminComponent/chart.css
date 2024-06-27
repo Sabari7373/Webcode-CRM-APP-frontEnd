@@ -1,0 +1,19 @@
+.Chart{
+    width: 70%;
+    margin-left: 25%;
+    background-color: rgb(70, 69, 69);
+}
+
+.charts{
+
+    margin: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.back{
+    background: rgb(66, 65, 64);
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+}

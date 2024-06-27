@@ -1,3 +1,4 @@
 export const Config = {
-    api:"http://localost:3001"
-  };
+  // api:'https://crm-backend-tn5z.onrender.com'
+  api:'http://localhost:3001'
+}

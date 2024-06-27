@@ -1,0 +1,50 @@
+/* App.css */
+
+.App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    
+  }
+  .heading{
+    margin-left: 45%;
+    display: flex;
+  }
+  
+  .App-main {
+    margin: 4rem;
+    padding: 0.3rem;
+    border: 5px solid rgb(0, 120, 239);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #ffffff;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .backToDashboard{
+    align-items: right;
+    justify-content: right;
+    margin-left: 400%;
+  }
