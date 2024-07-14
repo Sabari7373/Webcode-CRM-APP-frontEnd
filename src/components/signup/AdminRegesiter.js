@@ -34,7 +34,7 @@ const CreateAdminRegister = () => {
             return errors
         },
         onSubmit : async (values) => {
-            let createadminregister = await axios.post(`http://localhost:3001/createadminregister`,values);
+            let createadminregister = await axios.post(`${Config.api}/createadminregister`,values);
             alert("New Admin Account Registered")
             navigate('/Adminlogin')
         }
