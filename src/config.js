@@ -1,4 +1,4 @@
 export const Config = {
-  api:'https://crm-backend-tn5z.onrender.com'
-  // api:'http://localhost:3001 '
+  api:"https://webcode-crm-app-backend.vercel.app"
+  // api:'http://localhost:3001'
 }
